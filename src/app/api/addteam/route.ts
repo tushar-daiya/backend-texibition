@@ -10,7 +10,7 @@ const bodySchema = z.object({
   email: z.string().email(),
 });
 
-export default async function GET(req: NextRequest) {
+export async function GET(req: NextRequest) {
   const body = await req.json();
   const parsedBody = bodySchema.safeParse(body);
   if (!parsedBody.success) {
