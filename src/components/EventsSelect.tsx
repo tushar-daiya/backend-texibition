@@ -83,7 +83,7 @@ export default function EventsSelector() {
       }
       onValueChange={(value) => handleChange(value)}
     >
-      <SelectTrigger className="w-[300px] text-foreground">
+      <SelectTrigger className="md:w-[300px] w-[150px] text-foreground">
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
